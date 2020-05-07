@@ -1,0 +1,29 @@
+{
+  "name": "ui-university-ranking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poulami-Sarkar/ui-university-ranking.git"
+  },
+  "author": "Poulami Sarkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poulami-Sarkar/ui-university-ranking/issues"
+  },
+  "homepage": "https://github.com/Poulami-Sarkar/ui-university-ranking#readme"
+}
