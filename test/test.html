@@ -1,27 +1,108 @@
 <html>
-<head><title>Reading values into a table</title></head>
+<head>
+  <title>Reading values into a table</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+  <!-- Webpage Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
 <body>
 
-<table datasrc='#data'>
+<div class='container'>
+  <select class="mdb-select md-form colorful-select dropdown-primary" searchable="Search here..">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+    <option value="4">Option 4</option>
+    <option value="5">Option 5</option>
+  </select> 
+  <label class="mdb-main-label">Example label</label>
+</div>
+
+
+<div class ='container'>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+      class="navbar-toggler-icon"></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        <div class="arrow-down active-arrow"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#features">Features</a>
+        <div class="arrow-down active-arrow"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <div class="arrow-down active-arrow"></div>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <!-- Search form -->
+    <form class="form-inline">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+<div class='conatiner'>
+
   
-  <thead>
-     <tr><th>Number</th><th>English</th><th>French</th><th>German</th></tr>
-  </thead>
-
-  <tbody> <tr>
-     <td><span datafld='number'> </span></td>
-     <td><span datafld='english'></span></td>
-     <td><span datafld='french'> </span></td>
-     <td><span datafld='german'> </span></td>
-  </tbody>
-
-</table>
-
-
-<object ID=data classid="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83">
-  <param nAme="DataURL" value="data.csv">
-  <param nAme="UseHeader" value="true">
-</object>
+</div>
+<select class="browser-default custom-select">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<button class="btn-save btn btn-primary btn-sm">Save</button>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+  <!-- CSV core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>    
 
 </body>
 </html>
