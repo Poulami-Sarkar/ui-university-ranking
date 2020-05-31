@@ -23,3 +23,12 @@ console.log('Server running at http://127.0.0.1:8000/');
 /*
 // All other get and put requests
 */
+
+// Send ranking data to index.js
+app.get('/data',function(req,resp){
+  const fs = require('fs');
+
+  let rawdata = fs.readFileSync('./public/assets/data.json');
+  let data = JSON.parse(rawdata);
+  resp.send(data);
+});

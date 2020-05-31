@@ -1,0 +1,33 @@
+.active-arrow {
+    display: block;
+  }
+
+  .nav-item {
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    background-color: white;
+  }
+
+.w-75{
+  height:50px;
+}
+
+.univeristy-name{
+  padding-top: 20px;
+}
+
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+.jumbotron{
+  margin-top: 30px;;
+}
