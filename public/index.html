@@ -12,8 +12,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
         <!-- Webpage Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/toggle.css">
     </head>
-    <body>
+    <body class='rgba-grey-slight'>
       <!-- JQuery -->
       <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -56,13 +57,13 @@
         <!-- Analytics dashboard -->
         <div class="tab-pane active" id="home" role="tabpanel">
           <!-- Search form -->
-          <div class='container'>
+          <div class='container' >
   
             <!-- Jumbotron -->
-            <div class="jumbotron text-center">
+            <div class="jumbotron text-center ">
 
               <!-- Title -->
-              <h2 class="card-title h2">University Ranking</h2>
+              <h2 class="card-title h2">University internationality scores</h2>
               <!-- Subtitle -->
               <p class="blue-text my-4 font-weight-bold">Find the ranking of universities based on research output </p>
               <div class="d-flex justify-content-center mt-2 form-inline active-cyan-4">
@@ -91,10 +92,13 @@
                   <h1 class='univeristy-name'></h1>
               </div>
               <div class='row justify-content-center'>
-                <ul class="list-group list-group-flush ">
+                <table class='table uni-data'>
+
+                </table>
+                <!--<ul class="list-group list-group-flush ">
                   <li class="list-group-item nliq"></li>
                   <li class="list-group-item icr"></li>
-                </ul>
+                </ul> -->
               </div>
               
               <!-- Grid row Univeristy information -->
@@ -103,10 +107,109 @@
               <div class='container'>
                 
               </div>
-              <div class="pt-2">
-                <button type="button" class="btn btn-blue waves-effect">Learn more <span class="far fa-gem ml-1"></span></button>
-                <button type="button" class="btn btn-outline-primary waves-effect">Download <i class="fas fa-download ml-1"></i></button>
+
+              <div class="collapse-content">
+
+                <!-- Collapsible part -->
+                <div class='container collapse' id='collapseContent'>
+                  <div class='row justify-content-center'>
+                    <h4 class="title font-weight-bold">More information</h4>
+                  </div>
+                  <!-- graphs -->
+                  <div class='row'>
+                    <div class='col-md-12'>
+                      <!-- Card -->
+                      <div class="card chart-card">
+                        <!-- Card content -->
+                        <div class="card-body pb-0">
+                          <label>2D</label>
+                          <!-- Material checked -->
+                          <div class="switch">
+                            <label>
+                              <input class='toggle-slider' type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                          <label>3D</label>
+                        </div>
+                    
+                        <!-- Classic tabs -->
+                        <div class="classic-tabs">
+                    
+                          <!-- Nav tabs -->
+                          <ul class="nav tabs-white nav-fill" role="tablist">
+                            <li class="nav-item ml-0">
+                              <a class="nav-link waves-light active" data-toggle="tab" href="#d21" role="tab">1>&#961>0</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link waves-light" data-toggle="tab" href="#d22" role="tab">0.1>&#961>0.001</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link waves-light" data-toggle="tab" href="#d23" role="tab">0.99>&#961>0.9</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link waves-light" data-toggle="tab" href="#d24" role="tab">0.9>&#961>0.101</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link waves-light" data-toggle="tab" href="#d25" role="tab">&#961>1</a>
+                            </li>
+                          </ul>
+                    
+                          <div class="tab-content rounded-bottom">
+                            <!--Panel 1-->
+                            <div class="tab-pane fade in show active" id="d21" role="tabpanel">
+                              <img  class="">
+                            </div>
+                            <!--/.Panel 1-->
+
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="d22" role="tabpanel">
+                              <img  class="">
+                            </div>
+                            <!--/.Panel 2-->
+                            <!--Panel 3-->
+                            <div class="tab-pane fade" id="d23" role="tabpanel">
+                              <img class="" alt="sample image" src="">
+                            </div>
+                            <!--/.Panel 3-->
+                            <!--Panel 4-->
+                            <div class="tab-pane fade" id="d24" role="tabpanel">
+                              <img class="" alt="sample image" src="">
+                            </div>
+                            <!--/.Panel 4-->
+                            <!--Panel 5-->
+                            <div class="tab-pane fade" id="d25" role="tabpanel">
+                              <img class="" alt="sample image" src="">
+                            </div>
+                            <!--/.Panel 5-->
+                          </div>
+                    
+                        </div>
+                        <!-- Classic tabs -->
+                    
+                      </div>
+                      <!-- Card -->
+                    </div>
+                  </div>
+                  <!-- /graphs -->
+                  <!-- table -->
+                  <div class='row justify-content-center'>
+                    <table class='table table-sm text-left complete-uni-data'>
+
+                    </table>
+                  </div>
+                  <!-- /table-->
+                <!-- Collapsible part-->
+                </div>
+                <!-- Button -->
+                <div class="pt-2">
+                  <button type="button" class="btn btn-blue waves-effect"  data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">Learn more <span class="far fa-gem ml-1"></span></button>
+                  <button type="button" class="btn btn-outline-primary waves-effect">Download <i class="fas fa-download ml-1"></i></button>
+                  <i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                  <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>  
+                </div>
               </div>
+
 
             </div>
             <!-- Jumbotron -->
